@@ -1,0 +1,94 @@
+.filtros {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 12px;
+    font-size: 13px;
+    border: 2px solid lightgrey;
+    justify-content: space-around;
+    width: 97%;
+
+
+    .input-color {
+        width: 30px;
+    }
+
+    span {
+        align-self: center;
+    }
+
+    button {
+        font-size: bold;
+        width: 70px;
+
+        &:hover {
+            background-color: lightblue;
+        }
+    }
+}
+
+
+.filtro-div {div {label {font-weight: bold;}}}
+
+
+
+
+
+.main-indumentaria-calzado {
+    section {
+        display: flex;
+        justify-content: center;
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(180px, 215px));
+            grid-template-rows: repeat(3, 284px);
+            column-gap: 15px;
+            padding-left: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    object-fit: contain;
+                    height: 225px;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+#producto-responsive {
+    display: none;
+}
+
+
+// .indumentaria-calzado {
+//     display: grid;
+//     grid-template-columns: repeat(4, 225px);
+//     grid-template-rows: repeat(3, 284px);
+//     column-gap: 15px;
+//     padding-left: 20px;
+
+//     div {
+//         display: flex;
+//         flex-direction: column;
+
+//         img {
+//             object-fit: contain;
+
+//             height: 225px;
+//         }
+//     }
+
+//     #producto-responsive {
+//         display: none;
+//     }
+
+
+// }

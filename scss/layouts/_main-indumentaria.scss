@@ -5,9 +5,11 @@
     align-items: flex-start;
     margin-left: 12px;
     font-size: 13px;
-    border: 2px solid lightgrey;
     justify-content: space-around;
     width: 97%;
+    margin-top: 10px;
+    padding: 10px;
+   background-color: rgba(128, 128, 128,0.3);
 
 
     .input-color {
@@ -28,11 +30,13 @@
     }
 }
 
-
-.filtro-div {div {label {font-weight: bold;}}}
-
-
-
+.filtro-div {
+    div {
+        label {
+            font-weight: bold;
+        }
+    }
+}
 
 
 .main-indumentaria-calzado {
@@ -56,39 +60,10 @@
                     height: 225px;
                 }
             }
-
-
         }
-
     }
 }
 
 #producto-responsive {
     display: none;
 }
-
-
-// .indumentaria-calzado {
-//     display: grid;
-//     grid-template-columns: repeat(4, 225px);
-//     grid-template-rows: repeat(3, 284px);
-//     column-gap: 15px;
-//     padding-left: 20px;
-
-//     div {
-//         display: flex;
-//         flex-direction: column;
-
-//         img {
-//             object-fit: contain;
-
-//             height: 225px;
-//         }
-//     }
-
-//     #producto-responsive {
-//         display: none;
-//     }
-
-
-// }

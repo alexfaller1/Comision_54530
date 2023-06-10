@@ -15,6 +15,16 @@
  }
 
  @media (max-width:950px) {
+     .header {
+         nav {
+             ul {
+                 li {
+                     margin-right: 0px;
+                 }
+             }
+         }
+     }
+
      .main-indumentaria-calzado {
          section {
              div {
@@ -24,6 +34,42 @@
                  padding-top: 0px;
              }
          }
+     }
+ }
+
+ @media (max-width:740px) {
+     .header {
+         nav {
+             ul {
+                 flex-direction: row;
+                 justify-content: center;
+                 align-items: center;
+             }
+         }
+
+
+
+     }
+
+     .header {
+         nav {
+             form {
+                 input {
+                     width: 200px;
+                 }
+             }
+         }
+
+     }
+
+     .header {
+         grid-template-rows: 94px 100px;
+
+     }
+
+     .submenu {
+         flex-direction: column;
+
      }
  }
 
@@ -42,43 +88,11 @@
              }
          }
      }
- 
 
 
- .header {
-     nav {
-         ul {
-             flex-direction: row;
-             justify-content: center;
-             align-items: center;
-         }
-     }
 
-     ;
 
  }
-
- .header {
-     nav {
-         form {
-             input {
-                 width: 200px;
-             }
-         }
-     }
-
- }
-
- .header {
-     grid-template-rows: 94px 100px;
-
- }
-
- .submenu {
-     flex-direction: column;
-
- }
-}
 
  @media (max-width:580px) {
 
@@ -104,6 +118,46 @@
          border-radius: 0px;
          margin-top: 20px;
      }
+ }
+
+ @media (max-width:566px) {
+     .header {
+         nav {
+             ul {
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+         }
+     }
+
+ }
+
+ @media (max-width:450px) {
+     .header {
+         nav {
+             ul {
+                 li {
+                     font-size: 12px;
+                 }
+             }
+         }
+     }
+ }
+
+ @media (max-width:420px) {
+     .header {
+         nav {
+             form {
+                 input {
+                     width: 100px;
+                 }
+             }
+         }
+
+     }
+
+
  }
 
  @media (max-width:490px) {
@@ -147,66 +201,45 @@
 
 
 
- .info-carrito {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr;
- }
-
- .info-carrito {
-     div {
-         &:first-child {
-             display: flex;
-             flex-direction: column;
-         }
+     .info-carrito {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
      }
 
- }
-
- .header {
-     nav {
-         form {
-             input {
-                 width: 100px;
+     .info-carrito {
+         div {
+             &:first-child {
+                 display: flex;
+                 flex-direction: column;
              }
          }
+
      }
 
- }
 
- .header {
-     nav {
-         ul {
-             li {
-                 flex-direction: row;
-                 align-items: center;
-             }
-         }
+     .filtros {
+         font-size: 8px;
      }
-
  }
-
- .filtros {
-     font-size: 8px;
- }
-}
 
 
  @media (max-width:360px) {
-    .titulo {font-size: 24px;
-    align-items: center;
-display: flex;
-justify-content: center;}
-     .header {
-         nav {
-             ul {
-                 flex-direction: column;
-                 justify-content: center;
-                 align-items: flex-start;
+
+     .filtros {
+         span {
+             h2 {
+                 font-size: 10px;
              }
+
          }
+     }
 
-
+     .titulo {
+         font-size: 24px;
+         align-items: center;
+         display: flex;
+         justify-content: center;
      }
 
      .filtros {
@@ -218,5 +251,4 @@ justify-content: center;}
          height: 100%;
          border-radius: 0px;
      }
-
  }

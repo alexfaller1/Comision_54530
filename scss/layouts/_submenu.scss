@@ -2,10 +2,11 @@ header {
     .submenu {
         grid-area: submenu;
         background-color: $color-submenu;
-
-        
          display: flex;
          justify-content: space-around;
+         h2 {a { &:hover {color: rgba(255, 255, 255,0.7);
+            text-decoration: underline;}}}
+            
     }
 }
 
@@ -17,7 +18,9 @@ main {
             "titulo"
             "adidas"
         ;
-        h1 {grid-area: titulo;}
+        h1 {grid-area: titulo;
+            font-weight: bolder;
+    }
         img { grid-area: adidas;
             width: 100%;
             height: 360px;

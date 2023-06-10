@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: white
+    color: white;
 }
 
 li {
@@ -9,11 +9,7 @@ li {
 
 
 
-.logo {
-    font-size: 70px;
-    border: 4px solid white;
-    border-radius: 15px;
-}
+
 
 .header {
     display: grid;
@@ -26,42 +22,68 @@ li {
     nav {
         div {
             font-size: 70px;
-            border: 4px solid white;
-            border-radius: 12px;
             display: flex;
-          align-items: center;
-          
+            align-items: center;
+            padding: 7px;
+            margin: 6px;
+
+            &:hover {
+                outline: 3px solid white;
+                border-radius: 3px;
+            }
         }
 
         grid-area: nav;
+        
         background-color: $color-navbar;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
 
         form {
+            label {
+                margin-right: 15px;
+            }
+
             display: flex;
             justify-content: center;
             align-items: center;
 
             input {
+                border-radius: 10px;
+                &::placeholder {
+                    padding-left: 10px;
+                }
+
                 line-height: 40px;
                 width: 400px;
                 order: 1;
             }
         }
-
-        ul {
-            display: flex;
-            align-items: center;
-
-            li {
-                padding-right: 20px;
-            }
-        }
     }
 
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        li {
+         &:hover {opacity: 0.7;}
+            padding-right: 20px;
+            margin-right: 100px;
+            font-weight: bolder;
+
+            i {
+                color: white;
+            }
+
+        }
+    }
 }
+
+
+
 
 h2,
 h1 {

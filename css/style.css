@@ -15,7 +15,8 @@ li {
 .header {
   display: grid;
   grid-template-rows: 94px 50px;
-  grid-template-areas: "nav" "submenu"; }
+  grid-template-areas: "nav"
+ "submenu"; }
   .header nav {
     grid-area: nav;
     background-color: #D9414E;
@@ -115,7 +116,8 @@ header .submenu {
 main .eslogan {
   display: grid;
   grid-template-rows: 50px 400px;
-  grid-template-areas: "titulo" "adidas"; }
+  grid-template-areas: "titulo"
+ "adidas"; }
   main .eslogan h1 {
     grid-area: titulo;
     font-weight: bolder; }
@@ -273,6 +275,42 @@ main .eslogan {
       .container-logeo div form div:nth-child(4) button:hover {
         background-color: gray; }
 
+.main-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 300px));
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .main-nosotros section {
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: lightblue; }
+    .main-nosotros section:hover {
+      box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75); }
+
+.titulo-nosotros {
+  padding-top: 25px;
+  padding-bottom: 10px; }
+
+.empresas-envio li {
+  margin-left: 10px; }
+
+.pagos div {
+  padding-bottom: 10px; }
+
+.pagos ul li {
+  list-style: initial; }
+
+.envios li {
+  list-style: initial; }
+
+.calcular-envio {
+  margin-top: 20px; }
+
 @media (max-width: 970px) {
   .productos {
     height: 900px; }
@@ -292,7 +330,7 @@ main .eslogan {
     row-gap: 0px;
     padding-top: 0px; } }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .header nav ul {
     flex-direction: row;
     justify-content: center;

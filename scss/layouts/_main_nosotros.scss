@@ -1,0 +1,50 @@
+.main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(240px,300px) );
+  
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    section { margin: 5px;
+        padding: 20px;
+        border-radius: 10%;
+
+        background-color: rgb(173, 216, 230);
+      &:hover{  box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(25, 121, 189, 0.75);
+    }}
+}
+
+.titulo-nosotros {
+    padding-top: 25px;
+    padding-bottom: 10px;
+
+}
+
+.empresas-envio {
+    li {
+        margin-left: 10px;
+    }
+}
+
+.pagos {
+    div {
+        padding-bottom: 10px;
+    }
+
+    ul {
+        li {
+            list-style: initial;
+        }
+    }
+}
+
+.envios {
+    li {
+        list-style: initial;
+    }
+}
+.calcular-envio {margin-top: 20px;}

@@ -15,8 +15,7 @@ li {
 .header {
   display: grid;
   grid-template-rows: 94px 50px;
-  grid-template-areas: "nav"
- "submenu"; }
+  grid-template-areas: "nav" "submenu"; }
   .header nav {
     grid-area: nav;
     background-color: #D9414E;
@@ -116,8 +115,7 @@ header .submenu {
 main .eslogan {
   display: grid;
   grid-template-rows: 50px 400px;
-  grid-template-areas: "titulo"
- "adidas"; }
+  grid-template-areas: "titulo" "adidas"; }
   main .eslogan h1 {
     grid-area: titulo;
     font-weight: bolder; }
@@ -321,7 +319,10 @@ main .eslogan {
     .grid-container #hide {
       display: flex; } }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
+  .main-nosotros {
+    display: flex;
+    flex-direction: column; }
   .header nav ul li {
     margin-right: 0px; }
   .main-indumentaria-calzado section div {
@@ -330,7 +331,7 @@ main .eslogan {
     row-gap: 0px;
     padding-top: 0px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .header nav ul {
     flex-direction: row;
     justify-content: center;
